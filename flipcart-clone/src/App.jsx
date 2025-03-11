@@ -10,16 +10,12 @@ import Products from './pages/Products/Products';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Cart from './pages/Cart/Cart';
 
-export default function App() {
+ function App() {
   return (
     <div className="App"> {/* App container */}
     <BrowserRouter> {/* Wrap the entire app */} 
       <Navbar /> {/* Navbar inside BrowserRouter */}
-  
-        
-        
-        
-        
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -31,3 +27,4 @@ export default function App() {
     </div>
   );
 }
+export default App;
