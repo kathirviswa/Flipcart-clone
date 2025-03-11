@@ -1,7 +1,7 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import './App.css'
 
-
+import { Component } from 'react'
 //Components
 import Home from './Pages/Home/Home'
 import Products from './Pages/Products/Products'
