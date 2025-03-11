@@ -2,14 +2,16 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>
-      <h1 >FlipCart</h1>
+    <div className='Navbar-container'>
+      <div className='Navbar'>
+     
       <ul>
         <li>Home</li>
         <li>Products</li>
         <li>Cart</li>
         <li>Profile</li>
       </ul>
+    </div>
     </div>
   )
 }
