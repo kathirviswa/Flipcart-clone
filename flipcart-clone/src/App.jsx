@@ -12,9 +12,10 @@ import Cart from './pages/Cart/Cart';
 
  function App() {
   return (
-    <div className="App  bg-amber-600 "> {/* App container */}
-    <BrowserRouter> {/* Wrap the entire app */} 
-      <Navbar /> {/* Navbar inside BrowserRouter */}
+    <div className="min-h-screen bg-white "> 
+   
+    <BrowserRouter> 
+      <Navbar /> 
        
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,6 +26,7 @@ import Cart from './pages/Cart/Cart';
     
     </BrowserRouter>
     </div>
+   
   );
 }
 export default App;
