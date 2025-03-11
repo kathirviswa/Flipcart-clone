@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import './App.css'
 
 // Components
 import Navbar from './Components/Navbar';
@@ -12,12 +12,13 @@ import Cart from './pages/Cart/Cart';
 
 export default function App() {
   return (
-    <BrowserRouter> {/* Wrap the entire app */}
-      <div className="App">
-        <header className="App-header">
-          <h1>FlipCart Clone</h1>
-          <Navbar /> {/* Navbar inside BrowserRouter */}
-        </header>
+    <div className="App"> {/* App container */}
+    <BrowserRouter> {/* Wrap the entire app */} 
+      <Navbar /> {/* Navbar inside BrowserRouter */}
+  
+        
+        
+        
         
         <Routes>
           <Route path="/" element={<Home />} />
@@ -25,7 +26,8 @@ export default function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/productdetails/:productId" element={<ProductDetails />} />
         </Routes>
-      </div>
+    
     </BrowserRouter>
+    </div>
   );
 }
