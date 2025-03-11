@@ -12,7 +12,7 @@ import Cart from './pages/Cart/Cart';
 
  function App() {
   return (
-    <div className="App"> {/* App container */}
+    <div className="App  bg-amber-600 "> {/* App container */}
     <BrowserRouter> {/* Wrap the entire app */} 
       <Navbar /> {/* Navbar inside BrowserRouter */}
        
