@@ -1,9 +1,11 @@
-import { BrowserRouter, Route, Routes} from 'react-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css'
 
 
+
+
 //Components
-import Navbar from "./components/Navbar"
+import Navbar from './Components/Navbar'
 
 //PagesComponents
 import Home from './pages/Home/Home'
@@ -19,8 +21,9 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <h1>FlipCart Clone</h1>
+        <Navbar />  {/* Navbar component */}
       </header>
-      <Navbar />  {/* Navbar component */}
+ 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
