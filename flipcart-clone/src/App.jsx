@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-dom';
 import './App.css'
 
 
@@ -14,7 +14,6 @@ import Cart from './pages/Cart/Cart'
 
 
 export default function App() {
-
 
   return (
     <div className="App">
