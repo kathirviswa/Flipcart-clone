@@ -4,6 +4,7 @@
         "headlessui",
         "njsproj",
         "ntvs",
-        "productdetails"
+        "productdetails",
+        "productsdata"
     ]
 }
