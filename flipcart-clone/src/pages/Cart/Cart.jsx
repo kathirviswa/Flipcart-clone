@@ -2,7 +2,7 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <div className='cart-page-container p-8  w-[800px] '>
+    <div className='cart-page-container p-8  w-[800px] items-center '>
     <div className="cart-container  bg-slate-50 rounded-lg shadow-xl p-8 w-full max-w-4xl">
       <h1 > Your Cart</h1>
       <div className="cart-items flex items-start border-b-1 p-4 gap-4">
@@ -23,7 +23,11 @@ const Cart = () => {
      <p >Total : $200</p>
       </div>
      <div className="">
-        <button className="check-button bg-[#DC5F00] text-amber-50 border-none p-3  px-2 rounded-sm w-full">Checkout</button>==
+        <button className="check-button bg-[#DC5F00] text-amber-50 border-none p-3  px-2 rounded-sm w-full">Checkout</button>
+        <div className="flex items-center gap-4">
+        <input type='checkbox' className='w-6 h-6' />
+        <label className="text-sm text-gray-700">Save for later</label>
+        </div>
         <button className="continue-button bg-[#DC5F00] text-amber-50 border-none p-3  px-2 rounded-sm w-full">Continue Shopping</button>
         </div>
     </div>
