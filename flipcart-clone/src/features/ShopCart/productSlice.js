@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     products: [],
      status: 'idle',
-    //  error: null,
+      error: null,
+   
      
     
   }
