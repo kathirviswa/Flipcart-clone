@@ -9,16 +9,12 @@ import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Cart from './pages/Cart/Cart';
-//  import { Provider } from "react-redux";
-//  import {store} from './app/store'; // import your store here
+  // import your store here
 
  function App() {
   return (
     
-   
-    
-    
-    <div className="min-h-screen bg-white "> 
+  <div className="min-h-screen bg-white "> 
    
     <BrowserRouter> 
       <Navbar /> 
@@ -32,7 +28,7 @@ import Cart from './pages/Cart/Cart';
     
     </BrowserRouter>
     </div>
-
+  
   );
 }
 export default App;
