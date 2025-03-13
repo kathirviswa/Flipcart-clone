@@ -4,7 +4,7 @@ const Cart = () => {
   return (
     <div className="wrapper">
     <div className='cart-page-container p-8  w-[800px] '>
-    <div className="cart-container justify-around bg-slate-50 rounded-lg shadow-xl p-8 w-full max-w-4xl">
+    <div className="cart-container justify-around bg-slate-50 rounded-lg shadow-xl p-8 w-full max-w-4xl ">
       <h1 > Your Cart</h1>
       <div className="cart-items flex items-start border-b-1 p-4 gap-4">
        <img src='' alt='Image-title' className='flex-0 w-25 object-contain'/>
