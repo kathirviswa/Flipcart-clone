@@ -6,6 +6,8 @@
         "njsproj",
         "ntvs",
         "productdetails",
-        "productsdata"
+        "productsdata",
+        "setproducts",
+        "Tocart"
     ]
 }
