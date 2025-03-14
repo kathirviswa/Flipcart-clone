@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState} from 'react'
+import useSelector from 'react-redux'
 const Products = () => {
 const [Products, setProducts]= useState([])
 useEffect (() => {
   const fetchProducts =async() =>{
-  const response = await fetch('https://fakestoreapi.com/products')
+  const response = await fetch ('https://fakestoreapi.com/products')
+ 
+  useSelector((state)=>console.log(state));
+  
   const data = await response.json();
    setProducts(data);
     // console.log(data);
