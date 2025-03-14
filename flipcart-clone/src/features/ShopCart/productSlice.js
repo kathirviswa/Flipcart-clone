@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import axios  from 'axios'
+import axios  from 'axios';
+
 // const initialState = {
 //     products: [],
 //      status: 'idle',
-      
-    
 //   }
   
   export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
@@ -20,7 +19,6 @@ import axios  from 'axios'
       // error: null,
     },
      
-  
  extraReducers:(builder)=>{
       builder.addCase(fetchProducts.pending,(state)=>{
         state.status = 'loading'
@@ -30,8 +28,8 @@ import axios  from 'axios'
         state.products = action.payload;
       })
       .addCase(fetchProducts.rejected,(state,action)=>{
-        state.status = 'failed',
-         state.error = action.error.message;
+        state.status = 'failed'
+        //  state.error = action.error.message;
       })
     }
   })
